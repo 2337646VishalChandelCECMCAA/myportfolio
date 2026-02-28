@@ -51,33 +51,33 @@ export const certifications = [
 ];
 
 export const projects = [
-  {
-    title: 'E-commerce App',
-    image: ecommerceImage,
-    description:
-      'A full-featured commerce platform with product browsing, cart management, order placement, and authentication.',
-    stack: ['React', 'Node.js', 'MongoDB'],
-    githubUrl: 'https://github.com/vishalchandel/ecommerce-app',
-    demoUrl: 'https://ecommerce-demo.example.com'
-  },
-  {
-    title: 'Chat Application',
-    image: chatImage,
-    description:
-      'A real-time chat experience with room-based messaging, typing states, and robust socket event handling.',
-    stack: ['React', 'Node.js', 'Socket.io'],
-    githubUrl: 'https://github.com/vishalchandel/chat-app',
-    demoUrl: 'https://chat-demo.example.com'
-  },
-  {
-    title: 'Expense Tracker',
-    image: expenseImage,
-    description:
-      'An analytics-focused finance tracker for recording expenses, category summaries, and visual trend reports.',
-    stack: ['React', 'Chart.js', 'JavaScript'],
-    githubUrl: 'https://github.com/vishalchandel/expense-tracker',
-    demoUrl: 'https://expense-demo.example.com'
-  },
+//   {
+//     title: 'E-commerce App',
+//     image: ecommerceImage,
+//     description:
+//       'A full-featured commerce platform with product browsing, cart management, order placement, and authentication.',
+//     stack: ['React', 'Node.js', 'MongoDB'],
+//     githubUrl: 'https://github.com/vishalchandel/ecommerce-app',
+//     demoUrl: 'https://ecommerce-demo.example.com'
+//   },
+//   {
+//     title: 'Chat Application',
+//     image: chatImage,
+//     description:
+//       'A real-time chat experience with room-based messaging, typing states, and robust socket event handling.',
+//     stack: ['React', 'Node.js', 'Socket.io'],
+//     githubUrl: 'https://github.com/vishalchandel/chat-app',
+//     demoUrl: 'https://chat-demo.example.com'
+//   },
+//   {
+//     title: 'Expense Tracker',
+//     image: expenseImage,
+//     description:
+//       'An analytics-focused finance tracker for recording expenses, category summaries, and visual trend reports.',
+//     stack: ['React', 'Chart.js', 'JavaScript'],
+//     githubUrl: 'https://github.com/vishalchandel/expense-tracker',
+//     demoUrl: 'https://expense-demo.example.com'
+//   },
   {
     title: 'Avatar Generator',
     image: avatarImage,
