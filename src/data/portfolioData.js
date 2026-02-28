@@ -1,44 +1,64 @@
-import { FaGitAlt, FaNodeJs, FaReact } from 'react-icons/fa';
-import { SiJavascript, SiMongodb } from 'react-icons/si';
-import chatImage from '../assets/projects/chat.svg';
-import ecommerceImage from '../assets/projects/ecommerce.svg';
+import { FaCss3Alt, FaGitAlt, FaHtml5, FaNodeJs, FaReact } from 'react-icons/fa';
+import { RiTailwindCssFill, RiVercelFill } from 'react-icons/ri';
+import { SiExpress, SiGithub, SiJavascript } from 'react-icons/si';
 import expenseImage from '../assets/projects/expense.svg';
 import avatarImage from '../assets/projects/avatar.svg';
 import chatbotImage from '../assets/projects/chatbot.svg';
 
 export const profile = {
   name: 'Vishal Chandel',
-  title: 'Frontend Developer | Web Designer',
-  tagline: 'Frontend Developer fresher with 6+ months of hands-on training in building responsive and performance-optimized websites.',
-  bio: 'Skilled in HTML, CSS, Bootstrap, JavaScript, React.js, and Lighthouse optimization. I am seeking an entry-level frontend role to apply technical skills, contribute to real projects, and grow professionally.',
+  title: 'Frontend Developer',
+  tagline: 'Frontend Developer | React | JavaScript',
+  intro: [
+    'I build responsive, accessible, and performance-focused web interfaces with React and modern JavaScript.',
+    'I focus on clean architecture, reusable components, and recruiter-friendly product experiences.'
+  ],
+  bio: 'Frontend Developer with hands-on training in building optimized user interfaces and responsive websites. I apply modern JavaScript practices, strong UI fundamentals, and performance-first implementation to deliver reliable web experiences.',
   email: 'vishalchandel210@gmail.com',
   phone: '8894155350',
   location: 'Green Enclave, Mohali, Punjab',
+  resumeUrl: '/Vishal-Chandel-Resume.pdf',
   social: {
-    github: '',
+    github: 'https://github.com/2337646VishalChandelCECMCAA',
     linkedin: ''
   }
 };
 
-export const skills = [
+export const topSkills = [
   { name: 'React', icon: FaReact },
   { name: 'JavaScript', icon: SiJavascript },
   { name: 'Node.js', icon: FaNodeJs },
-  { name: 'MongoDB', icon: SiMongodb },
+  { name: 'HTML', icon: FaHtml5 },
+  { name: 'CSS', icon: FaCss3Alt },
   { name: 'Git', icon: FaGitAlt }
 ];
 
-export const technicalSkills = [
-  'HTML5',
-  'CSS3',
-  'Bootstrap 5',
-  'JavaScript (ES6)',
-  'jQuery',
-  'React.js',
-  'Lighthouse Optimization',
-  'Responsive Design',
-  'Cross-Browser Compatibility',
-  'Basic MERN Stack'
+export const skillCategories = [
+  {
+    title: 'Frontend',
+    items: [
+      { name: 'React', icon: FaReact },
+      { name: 'JavaScript', icon: SiJavascript },
+      { name: 'HTML', icon: FaHtml5 },
+      { name: 'CSS', icon: FaCss3Alt },
+      { name: 'Tailwind', icon: RiTailwindCssFill }
+    ]
+  },
+  {
+    title: 'Backend',
+    items: [
+      { name: 'Node.js', icon: FaNodeJs },
+      { name: 'Express', icon: SiExpress }
+    ]
+  },
+  {
+    title: 'Tools',
+    items: [
+      { name: 'Git', icon: FaGitAlt },
+      { name: 'GitHub', icon: SiGithub },
+      { name: 'Vercel', icon: RiVercelFill }
+    ]
+  }
 ];
 
 export const tools = ['VS Code', 'Git & GitHub', 'Chrome DevTools', 'Claude'];
@@ -51,39 +71,21 @@ export const certifications = [
 ];
 
 export const projects = [
-//   {
-//     title: 'E-commerce App',
-//     image: ecommerceImage,
-//     description:
-//       'A full-featured commerce platform with product browsing, cart management, order placement, and authentication.',
-//     stack: ['React', 'Node.js', 'MongoDB'],
-//     githubUrl: 'https://github.com/vishalchandel/ecommerce-app',
-//     demoUrl: 'https://ecommerce-demo.example.com'
-//   },
-//   {
-//     title: 'Chat Application',
-//     image: chatImage,
-//     description:
-//       'A real-time chat experience with room-based messaging, typing states, and robust socket event handling.',
-//     stack: ['React', 'Node.js', 'Socket.io'],
-//     githubUrl: 'https://github.com/vishalchandel/chat-app',
-//     demoUrl: 'https://chat-demo.example.com'
-//   },
-//   {
-//     title: 'Expense Tracker',
-//     image: expenseImage,
-//     description:
-//       'An analytics-focused finance tracker for recording expenses, category summaries, and visual trend reports.',
-//     stack: ['React', 'Chart.js', 'JavaScript'],
-//     githubUrl: 'https://github.com/vishalchandel/expense-tracker',
-//     demoUrl: 'https://expense-demo.example.com'
-//   },
+  {
+    title: 'Expense Tracker Analytics',
+    image: expenseImage,
+    description:
+      'Built a state-driven expense management interface with categorized entries, interactive chart visualizations, and efficient client-side aggregation for monthly trend analysis.',
+    stack: ['React', 'Chart.js', 'JavaScript'],
+    githubUrl: 'https://github.com/vishalchandel/expense-tracker',
+    demoUrl: 'https://expense-demo.example.com'
+  },
   {
     title: 'Avatar Generator',
     image: avatarImage,
     description:
-      'Avatar generator application that uses Axios API integration to create dynamic avatar styles from user inputs.',
-    stack: ['React', 'Axios API', 'JavaScript'],
+      'Implemented an avatar generator with Axios-powered API calls, customizable style controls, and responsive state handling for real-time visual preview updates.',
+    stack: ['React', 'Axios', 'REST API'],
     githubUrl: '',
     demoUrl: 'https://stellar-puppy-8ee4e4.netlify.app/'
   },
@@ -91,8 +93,8 @@ export const projects = [
     title: 'Mini Chatbot',
     image: chatbotImage,
     description:
-      'A lightweight chatbot utility page that currently supports actions like coin flip, current date, current time, and a few basic helper commands.',
-    stack: ['HTML', 'JavaScript', 'UI Logic'],
+      'Developed a lightweight utility chatbot using rule-based command mapping, supporting actions like coin flip, date/time retrieval, and quick helper responses.',
+    stack: ['HTML', 'JavaScript', 'DOM APIs'],
     githubUrl: 'https://github.com/Vishalchandel08/MY-PROJECTS/blob/main/chatbot.html',
     demoUrl: 'https://vishalchandel08.github.io/MY-PROJECTS/chatbot.html'
   }

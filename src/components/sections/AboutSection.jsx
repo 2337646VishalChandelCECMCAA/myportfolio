@@ -1,13 +1,13 @@
 import { motion } from 'framer-motion';
-import { certifications, profile, skills, technicalSkills, tools } from '../../data/portfolioData';
+import { certifications, profile, topSkills, tools } from '../../data/portfolioData';
 
 function AboutSection() {
   return (
-    <section className="py-12 sm:py-16" id="about">
+    <section className="section-wrapper" id="about">
       <div className="container-width space-y-8">
         <div>
           <h2 className="section-title">About</h2>
-          <p className="section-subtitle">A concise overview of background and core development strengths.</p>
+          <p className="section-subtitle">Professional profile focused on frontend engineering and production-ready UI delivery.</p>
         </div>
 
         <motion.article
@@ -15,15 +15,15 @@ function AboutSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.35 }}
           transition={{ duration: 0.5 }}
-          className="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft"
+          className="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft dark:border-slate-800 dark:bg-slate-900"
         >
-          <p className="text-sm leading-relaxed text-slate-600 sm:text-base">{profile.bio}</p>
+          <p className="text-sm leading-relaxed text-slate-600 dark:text-slate-300 sm:text-base">{profile.bio}</p>
         </motion.article>
 
         <div>
-          <h3 className="text-lg font-semibold text-slate-900">Skills</h3>
-          <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
-            {skills.map((skill, index) => {
+          <h3 className="text-lg font-semibold text-slate-900 dark:text-white">Core Stack</h3>
+          <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
+            {topSkills.map((skill, index) => {
               const Icon = skill.icon;
 
               return (
@@ -33,31 +33,13 @@ function AboutSection() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, amount: 0.2 }}
                   transition={{ duration: 0.35, delay: index * 0.06 }}
-                  className="flex items-center gap-2 rounded-xl border border-slate-200 bg-white p-3"
+                  className="flex items-center gap-2 rounded-xl border border-slate-200 bg-white p-3 dark:border-slate-800 dark:bg-slate-900"
                 >
-                  <Icon className="text-xl text-sky-300" aria-hidden="true" />
-                  <span className="text-sm text-slate-700">{skill.name}</span>
+                  <Icon className="text-xl text-sky-500" aria-hidden="true" />
+                  <span className="text-sm text-slate-700 dark:text-slate-300">{skill.name}</span>
                 </motion.div>
               );
             })}
-          </div>
-        </div>
-
-        <div>
-          <h3 className="text-lg font-semibold text-slate-900">Technical Skills</h3>
-          <div className="mt-4 flex flex-wrap gap-2">
-            {technicalSkills.map((item, index) => (
-              <motion.span
-                key={item}
-                initial={{ opacity: 0, y: 12 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.2 }}
-                transition={{ duration: 0.25, delay: index * 0.03 }}
-                className="rounded-full border border-slate-300 bg-white px-3 py-1 text-xs text-slate-700 sm:text-sm"
-              >
-                {item}
-              </motion.span>
-            ))}
           </div>
         </div>
 
@@ -67,10 +49,10 @@ function AboutSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.4 }}
-            className="rounded-2xl border border-slate-200 bg-white p-5"
+            className="rounded-2xl border border-slate-200 bg-white p-5 dark:border-slate-800 dark:bg-slate-900"
           >
-            <h3 className="text-lg font-semibold text-slate-900">Tools</h3>
-            <ul className="mt-3 space-y-2 text-sm text-slate-700">
+            <h3 className="text-lg font-semibold text-slate-900 dark:text-white">Tools</h3>
+            <ul className="mt-3 space-y-2 text-sm text-slate-700 dark:text-slate-300">
               {tools.map((tool) => (
                 <li key={tool}>• {tool}</li>
               ))}
@@ -82,10 +64,10 @@ function AboutSection() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.4, delay: 0.08 }}
-            className="rounded-2xl border border-slate-200 bg-white p-5"
+            className="rounded-2xl border border-slate-200 bg-white p-5 dark:border-slate-800 dark:bg-slate-900"
           >
-            <h3 className="text-lg font-semibold text-slate-900">Certifications</h3>
-            <ul className="mt-3 space-y-2 text-sm text-slate-700">
+            <h3 className="text-lg font-semibold text-slate-900 dark:text-white">Certifications</h3>
+            <ul className="mt-3 space-y-2 text-sm text-slate-700 dark:text-slate-300">
               {certifications.map((certificate) => (
                 <li key={certificate}>• {certificate}</li>
               ))}
