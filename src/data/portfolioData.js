@@ -47,8 +47,8 @@ export const skillCategories = [
   {
     title: 'Backend',
     items: [
-      { name: 'Node.js', icon: FaNodeJs },
-      { name: 'Express', icon: SiExpress }
+      { name: 'Node.js (basic)', icon: FaNodeJs },
+      { name: 'Express (basic)', icon: SiExpress }
     ]
   },
   {
@@ -61,7 +61,7 @@ export const skillCategories = [
   }
 ];
 
-export const tools = ['VS Code', 'Git & GitHub', 'Chrome DevTools', 'Claude'];
+export const tools = ['VS Code', 'Git & GitHub', 'Chrome DevTools', 'Antigravity', 'Lighthouse', 'Vercel', 'Netlify'];
 
 export const certifications = [
   'Python Essentials 1 - Cisco Networking Academy (2025)',
@@ -72,13 +72,13 @@ export const certifications = [
 
 export const projects = [
   {
-    title: 'Expense Tracker Analytics',
+    title: 'Spotify Clone App',
     image: expenseImage,
     description:
-      'Built a state-driven expense management interface with categorized entries, interactive chart visualizations, and efficient client-side aggregation for monthly trend analysis.',
-    stack: ['React', 'Chart.js', 'JavaScript'],
-    githubUrl: 'https://github.com/vishalchandel/expense-tracker',
-    demoUrl: 'https://expense-demo.example.com'
+      'Built a Spotify-inspired music interface with Axios-based API integration, dynamic playlists, and responsive UI behavior for smooth browsing and playback experience.',
+    stack: ['React', 'Axios', 'JavaScript'],
+    githubUrl: '',
+    demoUrl: 'https://spotify-flax-tau.vercel.app/'
   },
   {
     title: 'Avatar Generator',
